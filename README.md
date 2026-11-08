@@ -80,7 +80,9 @@ Design changes are released as new versions (see `CHANGELOG.md`). To request a c
 
 ## Download
 
-On the repository page: **Code → Download ZIP**, or open **Releases** and download the latest version.
+**Download everything (ZIP):** https://github.com/uxbyissa/tapback-dashboard-kit/archive/refs/heads/main.zip
+
+Or on the repository page: **Code → Download ZIP**. Each file can also be downloaded on its own from the file page (**Download raw file**).
 
 ## Licences
 
