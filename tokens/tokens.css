@@ -1,0 +1,142 @@
+/* ==========================================================================
+   TapBack Dashboard — design tokens
+   Source of truth: Figma "Tapback Dashboard — Trezo"
+   Page "TapBack identity — 02" · frame "Style 3 — Trezo · Glass + Apple UX ·
+   TapBack colours · Meed real data"
+   Version: 1.0.0
+   ========================================================================== */
+
+:root {
+  /* ---------- Brand · TapBack (top bar + side menu only) ---------- */
+  --tb-navy:            #054156;  /* top bar background, primary buttons, active tab */
+  --tb-navy-600:        #0B5B77;  /* gradient start for primary buttons */
+  --tb-navy-gradient:   linear-gradient(180deg, #0B5B77 0%, #054156 100%);
+  --tb-lime:            #D0FE17;  /* logo, active side-menu icon, accent */
+  --tb-ink:             #181818;
+  --tb-gray:            #5F6E74;  /* side-menu text */
+  --tb-line:            #E2E8EA;  /* side-menu border */
+  --tb-surface:         #F4F7F8;
+  --tb-light:           #DAEFF6;  /* side-menu active group background */
+  --tb-rail:            #C3DFE8;
+  --tb-topbar-muted:    #B9D3DC;  /* secondary text on the navy top bar */
+
+  /* ---------- Page & surfaces ---------- */
+  --page-bg:            #F6F7F9;
+  --card-bg:            rgba(255, 255, 255, 0.92);
+  --card-border:        rgba(26, 38, 77, 0.07);
+  --divider:            #ECEEF2;
+  --track:              #F1F3F7;  /* empty progress / bar track */
+  --tile-bg:            #F8F9FB;  /* metric tiles inside popovers */
+  --kbd-bg:             #F4F6FA;
+  --kbd-border:         #D5DAE3;
+
+  /* ---------- Text ---------- */
+  --text-primary:       #3A4252;  /* values, titles */
+  --text-secondary:     #64748B;  /* labels, legend */
+  --text-muted:         #8695AA;  /* captions, compare lines, table headers */
+  --text-faint:         #AAB3C2;
+  --text-on-dark:       #FFFFFF;
+
+  /* ---------- Metric colours (the ONLY category colours) ----------
+     One colour per metric, used everywhere that metric appears.       */
+  --metric-net-sales:          #2E64C6;
+  --metric-net-sales-subtle:   #EEF3FB;
+  --metric-orders:             #2DB6F5;
+  --metric-orders-text:        #0EA5E9;
+  --metric-orders-subtle:      #E8F7FE;
+  --metric-avg-ticket:         #8B5CF6;
+  --metric-avg-ticket-subtle:  #F3EEFF;
+  --metric-profit:             #25B003;
+  --metric-profit-subtle:      #EEFFE5;
+  --metric-stores:             #EC4899;  /* every store badge */
+  --metric-stores-text:        #DB2777;
+  --metric-stores-subtle:      #FDEEF6;
+
+  /* Net-sales tints — parts of sales (payments, order mode, periods) */
+  --sales-1:  #2E64C6;   /* today / largest part (e.g. Mada, Retail) */
+  --sales-2:  #5C8AD6;   /* Cash, Home delivery */
+  --sales-3:  #7FA2E0;   /* yesterday */
+  --sales-4:  #8AABE3;   /* Visa, Hunger Station, gross sales */
+  --sales-5:  #B9CDEF;   /* same day last week, cost, other products */
+  --sales-6:  #D6E2F6;   /* others / remaining */
+
+  /* ---------- Deductions & neutral data ---------- */
+  --data-tax:           #94A3B8;
+  --data-discounts:     #475569;
+  --data-unreconciled:  #DDE1E8;
+  --data-users:         #94A3B8;  /* user badges are neutral */
+
+  /* ---------- Status (alerts, limits, heatmap) ---------- */
+  --status-success:        #25B003;
+  --status-success-subtle: #EEFFE5;
+  --status-warning:        #F5A524;
+  --status-warning-text:   #B7791F;
+  --status-warning-subtle: #FFF3D6;
+  --status-danger:         #FD5812;  /* void / over limit */
+  --status-danger-subtle:  #FFF2EC;
+
+  /* ---------- Concept identity ---------- */
+  --concept-meed:       #8E1B2E;
+
+  /* ---------- Typography ---------- */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --fs-kpi:        22px;  /* KPI value · bold · letter-spacing -0.3px */
+  --fs-page-title: 20px;  /* page title · bold */
+  --fs-card-title: 15px;  /* card title · semibold */
+  --fs-tile-value: 15px;  /* metric tile value in popovers · semibold */
+  --fs-nav:        14px;  /* side-menu item · medium */
+  --fs-popover-title: 14px; /* popover title · semibold */
+  --fs-body:       13px;  /* table cells, KPI label · regular / semibold */
+  --fs-small:      12px;  /* pills, legend, compare line, buttons */
+  --fs-caption:    11px;  /* table headers, tile labels */
+  --ls-kpi:        -0.3px;
+
+  /* ---------- Radius ---------- */
+  --radius-xs:   4px;   /* kbd, small chips */
+  --radius-sm:   6px;   /* badges, bar segments, rings */
+  --radius-md:   8px;   /* buttons, notes, icon tiles */
+  --radius-lg:   10px;  /* metric tiles */
+  --radius-xl:   14px;  /* cards, popovers */
+  --radius-pill: 20px;  /* delta pills */
+  --radius-full: 999px;
+
+  /* ---------- Spacing ---------- */
+  --space-1: 4px;
+  --space-2: 6px;
+  --space-3: 8px;
+  --space-4: 10px;
+  --space-5: 12px;
+  --space-6: 14px;  /* gap between cards */
+  --space-7: 16px;
+  --space-8: 18px;  /* KPI card side padding */
+  --space-9: 20px;  /* card padding */
+
+  /* ---------- Buttons (Export / Today segment) ---------- */
+  --btn-height:   35px;
+  --btn-radius:   7px;
+  --btn-pad-y:    9px;
+  --btn-pad-x:    14px;
+
+  /* ---------- Layout ---------- */
+  --topbar-height: 60px;
+  --sidebar-width: 250px;
+  --content-gutter: 14px;
+  --frame-width: 1440px;
+
+  /* ---------- Elevation ---------- */
+  --shadow-popover: 0 12px 32px rgba(13, 23, 51, 0.16), 0 2px 6px rgba(0, 0, 0, 0.06);
+  --shadow-hover-ring: 0 8px 24px rgba(46, 100, 198, 0.18);  /* use the metric colour */
+  --shadow-btn-primary: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 2px 6px -2px rgba(41, 92, 196, 0.25);
+
+  /* ---------- Motion ---------- */
+  --dur-fast: 150ms;    /* popover show delay */
+  --dur-hide: 100ms;    /* popover hide delay */
+  --dur-count: 300ms;   /* number count-up on live update */
+  --dur-quicklook: 400ms; /* hover delay before Quick Look */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}

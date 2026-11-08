@@ -1,0 +1,90 @@
+/* ==========================================================================
+   TapBack Design System — tokens (POS, tablet 960 × 600)
+   Source: Figma "Tapback Dashboard — Trezo" → page "TapBack identity — 02"
+   boards: Tokens · Colour, Tokens · Type & space, Components · *
+   ========================================================================== */
+
+@font-face { font-family: "Poppins"; font-weight: 400; font-display: swap; src: url("../fonts/poppins/poppins-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 500; font-display: swap; src: url("../fonts/poppins/poppins-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 600; font-display: swap; src: url("../fonts/poppins/poppins-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-weight: 700; font-display: swap; src: url("../fonts/poppins/poppins-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans Arabic"; font-weight: 400; font-display: swap; src: url("../fonts/ibm-plex-sans-arabic/ibm-plex-sans-arabic-arabic-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans Arabic"; font-weight: 500; font-display: swap; src: url("../fonts/ibm-plex-sans-arabic/ibm-plex-sans-arabic-arabic-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans Arabic"; font-weight: 600; font-display: swap; src: url("../fonts/ibm-plex-sans-arabic/ibm-plex-sans-arabic-arabic-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans Arabic"; font-weight: 700; font-display: swap; src: url("../fonts/ibm-plex-sans-arabic/ibm-plex-sans-arabic-arabic-700-normal.woff2") format("woff2"); }
+
+:root {
+  /* ---------- Colour ---------- */
+  --tb-navy:        #054156;  /* primary */
+  --tb-lime:        #D0FE17;  /* selected / current */
+  --tb-ink:         #181818;  /* text */
+  --tb-gray:        #5F6E74;  /* secondary text */
+  --tb-line:        #E2E8EA;  /* borders */
+  --tb-surface:     #F4F7F8;  /* page */
+  --tb-light:       #DAEFF6;  /* info / editing */
+  --tb-scrim:       #071E26;  /* overlays (use with opacity) */
+  --tb-white:       #FFFFFF;
+
+  --tb-success:     #17803A;
+  --tb-success-bg:  #DCFCE7;
+  --tb-warning:     #B45309;
+  --tb-warning-bg:  #FEF3C7;
+  --tb-error:       #C8341F;
+  --tb-error-bg:    #FDECEA;
+  /* Status colours always come with an icon and a word — never colour alone. */
+
+  /* ---------- Type ---------- */
+  --tb-font-latin:  "Poppins", system-ui, sans-serif;
+  --tb-font-arabic: "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --tb-font:        "Poppins", "IBM Plex Sans Arabic", system-ui, sans-serif;
+
+  --tb-text-display:     700 24px/1.3 var(--tb-font);
+  --tb-text-title:       700 20px/1.3 var(--tb-font);
+  --tb-text-heading:     600 16px/1.4 var(--tb-font);
+  --tb-text-body-strong: 600 14px/1.5 var(--tb-font);
+  --tb-text-body:        400 14px/1.5 var(--tb-font);
+  --tb-text-caption:     400 12px/1.4 var(--tb-font);  /* also Medium 500 */
+  --tb-text-meta:        400 11px/1.4 var(--tb-font);  /* time stamps only */
+
+  /* ---------- Spacing (4 px grid) ---------- */
+  --tb-space-1: 4px;
+  --tb-space-2: 8px;
+  --tb-space-3: 12px;
+  --tb-space-4: 16px;
+  --tb-space-5: 24px;
+  --tb-space-6: 32px;
+
+  /* ---------- Radius ---------- */
+  --tb-radius-control: 10px;  /* small controls */
+  --tb-radius-input:   12px;  /* inputs, rows, small buttons, icon buttons, keypad keys */
+  --tb-radius-button:  14px;  /* buttons */
+  --tb-radius-card-sm: 16px;  /* small cards */
+  --tb-radius-card:    20px;  /* cards */
+  --tb-radius-dialog:  24px;  /* dialogs */
+  --tb-radius-pill:    999px; /* chips, tabs, status pills */
+
+  /* ---------- Touch & layout (tablet 960 × 600) ---------- */
+  --tb-touch-min:      44px;  /* every target */
+  --tb-touch-main:     48px;  /* main controls */
+  --tb-touch-primary:  56px;  /* primary actions */
+  --tb-target-gap:     8px;
+  --tb-status-bar:     24px;
+  --tb-top-bar:        56px;
+  --tb-rail:           72px;
+  --tb-order-panel:    320px;
+  --tb-gesture-area:   16px;
+}
+
+/* ---------- Component reference (sizes from the Figma components) ----------
+   Button       L 56h · M 48h · S 44h · radius 14 (S: 12) · padding-x 20 (S: 14) · SemiBold 15 (S: 13)
+                Primary  bg navy, text white
+                Secondary bg white, 1.5px border line, text navy
+                Ghost    transparent, text navy
+                Danger   bg white, 1.5px border error, text error
+   Icon button  48 × 48 · radius 12 · Secondary / Primary / Ghost
+   Chip / Tab   44h · pill · Medium 14 ink on white + 1px line; Selected / Active = navy bg, white SemiBold
+   Status pill  28h · pill · SemiBold 12 · Success / Warning / Error / Neutral / Info (bg = *-bg token)
+   Keypad key   88 × 56 · radius 12 · Digit: white + line, SemiBold 22 · Quick: light bg, navy SemiBold 16
+   Stepper      132 × 44 · Bold 16 (zero state in gray)
+   Field        Label (SemiBold 13) · value · helper text · Default / Focused / Error
+   -------------------------------------------------------------------------- */

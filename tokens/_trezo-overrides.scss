@@ -1,0 +1,108 @@
+// ==========================================================================
+// TapBack Dashboard — Trezo (Bootstrap 5) variable overrides
+// Import BEFORE Trezo / Bootstrap:
+//   @import "tapback-dashboard-kit/tokens/trezo-overrides";
+//   @import "trezo/scss/style";
+// ==========================================================================
+
+// Brand
+$tb-navy:      #054156;
+$tb-navy-600:  #0B5B77;
+$tb-lime:      #D0FE17;
+
+// Metric colours — one colour per metric, everywhere
+$metric-net-sales:  #2E64C6;
+$metric-orders:     #2DB6F5;
+$metric-avg-ticket: #8B5CF6;
+$metric-profit:     #25B003;
+$metric-stores:     #EC4899;
+
+// Bootstrap theme map
+$primary:   $tb-navy;          // buttons, active tab, links in shell
+$secondary: #64748B;
+$success:   #25B003;
+$info:      $metric-orders;
+$warning:   #F5A524;
+$danger:    #FD5812;
+$light:     #F6F7F9;
+$dark:      #181818;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "net-sales":  $metric-net-sales,
+  "orders":     $metric-orders,
+  "avg-ticket": $metric-avg-ticket,
+  "profit":     $metric-profit,
+  "stores":     $metric-stores,
+  "lime":       $tb-lime
+);
+
+// Body & text
+$body-bg:               #F6F7F9;
+$body-color:            #3A4252;
+$text-muted:            #8695AA;
+$border-color:          #ECEEF2;
+
+// Typography
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-size-base:         0.8125rem;   // 13px
+$font-size-sm:           0.75rem;     // 12px
+$font-weight-semibold:   600;
+$headings-color:         #3A4252;
+
+// Cards
+$card-bg:                rgba(255, 255, 255, 0.92);
+$card-border-color:      rgba(26, 38, 77, 0.07);
+$card-border-radius:     14px;
+$card-spacer-x:          20px;
+$card-spacer-y:          20px;
+$card-box-shadow:        none;
+
+// Buttons
+$btn-border-radius:      7px;
+$btn-padding-y:          9px;
+$btn-padding-x:          14px;
+$btn-font-weight:        600;
+$btn-font-size:          0.75rem;
+
+// Badges / pills
+$badge-border-radius:    20px;
+$badge-font-weight:      600;
+$badge-font-size:        0.75rem;
+$badge-padding-y:        3px;
+$badge-padding-x:        8px;
+
+// Progress (stacked bars)
+$progress-bg:            #F1F3F7;
+$progress-border-radius: 6px;
+$progress-height:        10px;
+
+// Tables
+$table-color:            #3A4252;
+$table-border-color:     #ECEEF2;
+$table-th-font-weight:   600;
+$table-hover-bg:         #F8F9FB;
+
+// Popovers (hover cards), toasts, dropdowns
+$popover-bg:             #FFFFFF;
+$popover-border-color:   #ECEEF2;
+$popover-border-radius:  14px;
+$popover-box-shadow:     0 12px 32px rgba(13, 23, 51, 0.16), 0 2px 6px rgba(0, 0, 0, 0.06);
+$popover-max-width:      320px;
+$popover-body-padding-x: 16px;
+$popover-body-padding-y: 16px;
+
+$toast-border-radius:    14px;
+$toast-box-shadow:       0 12px 32px rgba(13, 23, 51, 0.16), 0 2px 6px rgba(0, 0, 0, 0.06);
+
+$dropdown-border-radius: 14px;
+$dropdown-box-shadow:    0 12px 32px rgba(13, 23, 51, 0.16), 0 2px 6px rgba(0, 0, 0, 0.06);
+
+$offcanvas-horizontal-width: 340px;

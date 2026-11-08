@@ -1,0 +1,177 @@
+{
+  "name": "TapBack Design System tokens",
+  "version": "1.0.0",
+  "tokens": {
+    "colour": {
+      "tb-navy": {
+        "value": "#054156",
+        "note": "primary"
+      },
+      "tb-lime": {
+        "value": "#D0FE17",
+        "note": "selected / current"
+      },
+      "tb-ink": {
+        "value": "#181818",
+        "note": "text"
+      },
+      "tb-gray": {
+        "value": "#5F6E74",
+        "note": "secondary text"
+      },
+      "tb-line": {
+        "value": "#E2E8EA",
+        "note": "borders"
+      },
+      "tb-surface": {
+        "value": "#F4F7F8",
+        "note": "page"
+      },
+      "tb-light": {
+        "value": "#DAEFF6",
+        "note": "info / editing"
+      },
+      "tb-scrim": {
+        "value": "#071E26",
+        "note": "overlays (use with opacity)"
+      },
+      "tb-white": {
+        "value": "#FFFFFF"
+      },
+      "tb-success": {
+        "value": "#17803A"
+      },
+      "tb-success-bg": {
+        "value": "#DCFCE7"
+      },
+      "tb-warning": {
+        "value": "#B45309"
+      },
+      "tb-warning-bg": {
+        "value": "#FEF3C7"
+      },
+      "tb-error": {
+        "value": "#C8341F"
+      },
+      "tb-error-bg": {
+        "value": "#FDECEA"
+      }
+    },
+    "type": {
+      "tb-font-latin": {
+        "value": "\"Poppins\", system-ui, sans-serif"
+      },
+      "tb-font-arabic": {
+        "value": "\"IBM Plex Sans Arabic\", system-ui, sans-serif"
+      },
+      "tb-font": {
+        "value": "\"Poppins\", \"IBM Plex Sans Arabic\", system-ui, sans-serif"
+      },
+      "tb-text-display": {
+        "value": "700 24px/1.3 var(--tb-font)"
+      },
+      "tb-text-title": {
+        "value": "700 20px/1.3 var(--tb-font)"
+      },
+      "tb-text-heading": {
+        "value": "600 16px/1.4 var(--tb-font)"
+      },
+      "tb-text-body-strong": {
+        "value": "600 14px/1.5 var(--tb-font)"
+      },
+      "tb-text-body": {
+        "value": "400 14px/1.5 var(--tb-font)"
+      },
+      "tb-text-caption": {
+        "value": "400 12px/1.4 var(--tb-font)",
+        "note": "also Medium 500"
+      },
+      "tb-text-meta": {
+        "value": "400 11px/1.4 var(--tb-font)",
+        "note": "time stamps only"
+      }
+    },
+    "spacing": {
+      "tb-space-1": {
+        "value": "4px"
+      },
+      "tb-space-2": {
+        "value": "8px"
+      },
+      "tb-space-3": {
+        "value": "12px"
+      },
+      "tb-space-4": {
+        "value": "16px"
+      },
+      "tb-space-5": {
+        "value": "24px"
+      },
+      "tb-space-6": {
+        "value": "32px"
+      }
+    },
+    "radius": {
+      "tb-radius-control": {
+        "value": "10px",
+        "note": "small controls"
+      },
+      "tb-radius-input": {
+        "value": "12px",
+        "note": "inputs, rows, small buttons, icon buttons, keypad keys"
+      },
+      "tb-radius-button": {
+        "value": "14px",
+        "note": "buttons"
+      },
+      "tb-radius-card-sm": {
+        "value": "16px",
+        "note": "small cards"
+      },
+      "tb-radius-card": {
+        "value": "20px",
+        "note": "cards"
+      },
+      "tb-radius-dialog": {
+        "value": "24px",
+        "note": "dialogs"
+      },
+      "tb-radius-pill": {
+        "value": "999px",
+        "note": "chips, tabs, status pills"
+      }
+    },
+    "touch-layout": {
+      "tb-touch-min": {
+        "value": "44px",
+        "note": "every target"
+      },
+      "tb-touch-main": {
+        "value": "48px",
+        "note": "main controls"
+      },
+      "tb-touch-primary": {
+        "value": "56px",
+        "note": "primary actions"
+      },
+      "tb-target-gap": {
+        "value": "8px"
+      },
+      "tb-status-bar": {
+        "value": "24px"
+      },
+      "tb-top-bar": {
+        "value": "56px"
+      },
+      "tb-rail": {
+        "value": "72px"
+      },
+      "tb-order-panel": {
+        "value": "320px"
+      },
+      "tb-gesture-area": {
+        "value": "16px"
+      }
+    }
+  }
+}

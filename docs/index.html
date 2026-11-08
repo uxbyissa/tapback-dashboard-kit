@@ -1,0 +1,149 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TapBack Dashboard — Media Kit</title>
+<link rel="stylesheet" href="../tokens/fonts.css"><link rel="stylesheet" href="../tokens/tokens.css">
+<style>
+*{box-sizing:border-box}body{margin:0;background:var(--page-bg);color:var(--text-primary);font-family:var(--font-sans);font-size:14px}
+header{background:var(--tb-navy);color:#fff;padding:28px 40px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+header img{height:30px}header h1{font-size:20px;margin:0;font-weight:600}header p{margin:2px 0 0;color:var(--tb-topbar-muted);font-size:13px}
+main{max-width:1240px;margin:0 auto;padding:32px 24px 80px}section{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius-xl);padding:24px;margin-bottom:20px}
+h2{font-size:17px;margin:0 0 4px}.sub{color:var(--text-muted);margin:0 0 18px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.sw{display:flex;gap:12px;align-items:center;padding:8px;border-radius:10px;background:var(--tile-bg)}.chip{width:48px;height:48px;border-radius:10px;border:1px solid var(--card-border);flex:none}
+.meta{display:flex;flex-direction:column;font-size:12px;min-width:0}.meta b{font-weight:600}.meta code{color:var(--text-secondary)}.meta span{color:var(--text-muted);font-size:11px}
+.logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}.logo{border-radius:12px;padding:28px;display:flex;align-items:center;justify-content:center;min-height:110px;border:1px solid var(--card-border)}.logo img{max-height:44px;max-width:100%}
+.ty{display:flex;align-items:baseline;gap:20px;padding:12px 0;border-bottom:1px solid var(--divider)}.ty .lbl{width:240px;flex:none;font-size:12px;color:var(--text-secondary)}.ty code{color:var(--text-muted);font-size:11px}
+.icons{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px}.icons figure{margin:0;background:var(--tile-bg);border-radius:10px;padding:14px 8px;text-align:center}.icons img{width:28px;height:28px;opacity:.75}.icons figcaption{font-size:11px;color:var(--text-muted);margin-top:6px;word-break:break-word}
+.prev{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}.prev figure,.comps figure{margin:0}.prev img{width:100%;border-radius:10px;border:1px solid var(--card-border)}figcaption{font-size:12px;color:var(--text-secondary);margin-top:6px}
+.comps{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;align-items:start}.comps img{width:100%}
+.rule{display:flex;gap:10px;flex-wrap:wrap}.pill{padding:4px 10px;border-radius:var(--radius-pill);font-size:12px;font-weight:600}
+video{width:100%;border-radius:10px;border:1px solid var(--card-border)}
+@media (max-width:640px){header,main{padding-left:16px;padding-right:16px}.ty{flex-direction:column;gap:4px}.ty .lbl{width:auto}.prev{grid-template-columns:1fr}}
+</style></head><body>
+<header><img src="../assets/logo/tapback-logo-lime.svg" alt="TapBack"><div><h1>Dashboard Media Kit · v1.0.0</h1><p>Logos · colours · type · icons · components · previews — design source: Figma "Tapback Dashboard — Trezo"</p></div></header>
+<main>
+<section><h2>Identity rule</h2><p class="sub">TapBack identity lives only in the top bar and the side menu. The content area uses one colour per metric.</p>
+<div class="rule"><span class="pill" style="background:var(--metric-net-sales-subtle);color:var(--metric-net-sales)">Net sales</span><span class="pill" style="background:var(--metric-orders-subtle);color:var(--metric-orders-text)">Orders</span><span class="pill" style="background:var(--metric-avg-ticket-subtle);color:var(--metric-avg-ticket)">Avg. ticket</span><span class="pill" style="background:var(--metric-profit-subtle);color:var(--metric-profit)">Gross profit</span><span class="pill" style="background:var(--metric-stores-subtle);color:var(--metric-stores-text)">Stores</span></div></section>
+<section><h2>Logo</h2><p class="sub">assets/logo · SVG + PNG (@2x, @4x) · app icons 32 / 180 / 512</p><div class="logos">
+<div class="logo" style="background:var(--tb-navy)"><img src="../assets/logo/tapback-logo-lime.svg" alt=""></div>
+<div class="logo" style="background:#fff"><img src="../assets/logo/tapback-logo-navy.svg" alt=""></div>
+<div class="logo" style="background:var(--tb-ink)"><img src="../assets/logo/tapback-logo-white.svg" alt=""></div>
+<div class="logo" style="background:var(--tb-lime)"><img src="../assets/logo/tapback-logo-black.svg" alt=""></div>
+<div class="logo" style="background:#fff"><img src="../assets/logo/png/app-icon-512.png" alt="" style="max-height:72px"></div>
+<div class="logo" style="background:var(--tb-navy)"><img src="../assets/logo/tapback-mark-lime.svg" alt="" style="max-height:52px"></div>
+</div></section>
+<section><h2>Brand · TapBack</h2><p class="sub">Top bar and side menu</p><div class="grid"><div class="sw"><div class="chip" style="background:#054156"></div><div class="meta"><b>--tb-navy</b><code>#054156</code><span>top bar background, primary buttons, active tab</span></div></div>
+<div class="sw"><div class="chip" style="background:#0B5B77"></div><div class="meta"><b>--tb-navy-600</b><code>#0B5B77</code><span>gradient start for primary buttons</span></div></div>
+<div class="sw"><div class="chip" style="background:linear-gradient(180deg, #0B5B77 0%, #054156 100%)"></div><div class="meta"><b>--tb-navy-gradient</b><code>linear-gradient(180deg, #0B5B77 0%, #054156 100%)</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#D0FE17"></div><div class="meta"><b>--tb-lime</b><code>#D0FE17</code><span>logo, active side-menu icon, accent</span></div></div>
+<div class="sw"><div class="chip" style="background:#181818"></div><div class="meta"><b>--tb-ink</b><code>#181818</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#5F6E74"></div><div class="meta"><b>--tb-gray</b><code>#5F6E74</code><span>side-menu text</span></div></div>
+<div class="sw"><div class="chip" style="background:#E2E8EA"></div><div class="meta"><b>--tb-line</b><code>#E2E8EA</code><span>side-menu border</span></div></div>
+<div class="sw"><div class="chip" style="background:#F4F7F8"></div><div class="meta"><b>--tb-surface</b><code>#F4F7F8</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#DAEFF6"></div><div class="meta"><b>--tb-light</b><code>#DAEFF6</code><span>side-menu active group background</span></div></div>
+<div class="sw"><div class="chip" style="background:#C3DFE8"></div><div class="meta"><b>--tb-rail</b><code>#C3DFE8</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#B9D3DC"></div><div class="meta"><b>--tb-topbar-muted</b><code>#B9D3DC</code><span>secondary text on the navy top bar</span></div></div></div></section>
+<section><h2>Metric colours</h2><p class="sub">The only category colours — one per metric, everywhere it appears</p><div class="grid"><div class="sw"><div class="chip" style="background:#2E64C6"></div><div class="meta"><b>--metric-net-sales</b><code>#2E64C6</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#EEF3FB"></div><div class="meta"><b>--metric-net-sales-subtle</b><code>#EEF3FB</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#2DB6F5"></div><div class="meta"><b>--metric-orders</b><code>#2DB6F5</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#0EA5E9"></div><div class="meta"><b>--metric-orders-text</b><code>#0EA5E9</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#E8F7FE"></div><div class="meta"><b>--metric-orders-subtle</b><code>#E8F7FE</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#8B5CF6"></div><div class="meta"><b>--metric-avg-ticket</b><code>#8B5CF6</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#F3EEFF"></div><div class="meta"><b>--metric-avg-ticket-subtle</b><code>#F3EEFF</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#25B003"></div><div class="meta"><b>--metric-profit</b><code>#25B003</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#EEFFE5"></div><div class="meta"><b>--metric-profit-subtle</b><code>#EEFFE5</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#EC4899"></div><div class="meta"><b>--metric-stores</b><code>#EC4899</code><span>every store badge</span></div></div>
+<div class="sw"><div class="chip" style="background:#DB2777"></div><div class="meta"><b>--metric-stores-text</b><code>#DB2777</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#FDEEF6"></div><div class="meta"><b>--metric-stores-subtle</b><code>#FDEEF6</code><span></span></div></div>
+
+
+
+
+
+</div></section>
+<section><h2>Parts of net sales · deductions · status</h2><p class="sub">Blue tints for parts of sales; status colours only for alerts and limits</p><div class="grid"><div class="sw"><div class="chip" style="background:#2E64C6"></div><div class="meta"><b>--sales-1</b><code>#2E64C6</code><span>today / largest part (e.g. Mada, Retail)</span></div></div>
+<div class="sw"><div class="chip" style="background:#5C8AD6"></div><div class="meta"><b>--sales-2</b><code>#5C8AD6</code><span>Cash, Home delivery</span></div></div>
+<div class="sw"><div class="chip" style="background:#7FA2E0"></div><div class="meta"><b>--sales-3</b><code>#7FA2E0</code><span>yesterday</span></div></div>
+<div class="sw"><div class="chip" style="background:#8AABE3"></div><div class="meta"><b>--sales-4</b><code>#8AABE3</code><span>Visa, Hunger Station, gross sales</span></div></div>
+<div class="sw"><div class="chip" style="background:#B9CDEF"></div><div class="meta"><b>--sales-5</b><code>#B9CDEF</code><span>same day last week, cost, other products</span></div></div>
+<div class="sw"><div class="chip" style="background:#D6E2F6"></div><div class="meta"><b>--sales-6</b><code>#D6E2F6</code><span>others / remaining</span></div></div><div class="sw"><div class="chip" style="background:#94A3B8"></div><div class="meta"><b>--data-tax</b><code>#94A3B8</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#475569"></div><div class="meta"><b>--data-discounts</b><code>#475569</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#DDE1E8"></div><div class="meta"><b>--data-unreconciled</b><code>#DDE1E8</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#94A3B8"></div><div class="meta"><b>--data-users</b><code>#94A3B8</code><span>user badges are neutral</span></div></div><div class="sw"><div class="chip" style="background:#25B003"></div><div class="meta"><b>--status-success</b><code>#25B003</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#EEFFE5"></div><div class="meta"><b>--status-success-subtle</b><code>#EEFFE5</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#F5A524"></div><div class="meta"><b>--status-warning</b><code>#F5A524</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#B7791F"></div><div class="meta"><b>--status-warning-text</b><code>#B7791F</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#FFF3D6"></div><div class="meta"><b>--status-warning-subtle</b><code>#FFF3D6</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#FD5812"></div><div class="meta"><b>--status-danger</b><code>#FD5812</code><span>void / over limit</span></div></div>
+<div class="sw"><div class="chip" style="background:#FFF2EC"></div><div class="meta"><b>--status-danger-subtle</b><code>#FFF2EC</code><span></span></div></div><div class="sw"><div class="chip" style="background:#8E1B2E"></div><div class="meta"><b>--concept-meed</b><code>#8E1B2E</code><span></span></div></div></div></section>
+<section><h2>Surfaces & text</h2><p class="sub">Page, cards, dividers and text colours</p><div class="grid"><div class="sw"><div class="chip" style="background:#F6F7F9"></div><div class="meta"><b>--page-bg</b><code>#F6F7F9</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:rgba(255, 255, 255, 0.92)"></div><div class="meta"><b>--card-bg</b><code>rgba(255, 255, 255, 0.92)</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:rgba(26, 38, 77, 0.07)"></div><div class="meta"><b>--card-border</b><code>rgba(26, 38, 77, 0.07)</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#ECEEF2"></div><div class="meta"><b>--divider</b><code>#ECEEF2</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#F1F3F7"></div><div class="meta"><b>--track</b><code>#F1F3F7</code><span>empty progress / bar track</span></div></div>
+<div class="sw"><div class="chip" style="background:#F8F9FB"></div><div class="meta"><b>--tile-bg</b><code>#F8F9FB</code><span>metric tiles inside popovers</span></div></div>
+<div class="sw"><div class="chip" style="background:#F4F6FA"></div><div class="meta"><b>--kbd-bg</b><code>#F4F6FA</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#D5DAE3"></div><div class="meta"><b>--kbd-border</b><code>#D5DAE3</code><span></span></div></div><div class="sw"><div class="chip" style="background:#3A4252"></div><div class="meta"><b>--text-primary</b><code>#3A4252</code><span>values, titles</span></div></div>
+<div class="sw"><div class="chip" style="background:#64748B"></div><div class="meta"><b>--text-secondary</b><code>#64748B</code><span>labels, legend</span></div></div>
+<div class="sw"><div class="chip" style="background:#8695AA"></div><div class="meta"><b>--text-muted</b><code>#8695AA</code><span>captions, compare lines, table headers</span></div></div>
+<div class="sw"><div class="chip" style="background:#AAB3C2"></div><div class="meta"><b>--text-faint</b><code>#AAB3C2</code><span></span></div></div>
+<div class="sw"><div class="chip" style="background:#FFFFFF"></div><div class="meta"><b>--text-on-dark</b><code>#FFFFFF</code><span></span></div></div></div></section>
+<section><h2>Typography · Inter</h2><p class="sub">tokens/fonts.css · use tabular numbers (.tb-num) for values</p><div class="ty"><span class="lbl">KPI value<br><code>--fs-kpi · 700</code></span><span style="font-size:var(--fs-kpi);font-weight:700;letter-spacing:-0.3px">517,265.91</span></div>
+<div class="ty"><span class="lbl">Page title<br><code>--fs-page-title · 700</code></span><span style="font-size:var(--fs-page-title);font-weight:700;letter-spacing:0">Meed</span></div>
+<div class="ty"><span class="lbl">Card title<br><code>--fs-card-title · 600</code></span><span style="font-size:var(--fs-card-title);font-weight:600;letter-spacing:0">Where today's gross sales went</span></div>
+<div class="ty"><span class="lbl">Side-menu item<br><code>--fs-nav · 500</code></span><span style="font-size:var(--fs-nav);font-weight:500;letter-spacing:0">Compare Stores</span></div>
+<div class="ty"><span class="lbl">Body / table cell<br><code>--fs-body · 600</code></span><span style="font-size:var(--fs-body);font-weight:600;letter-spacing:0">NAJMA · 16,154.32</span></div>
+<div class="ty"><span class="lbl">Small · pills, legend<br><code>--fs-small · 600</code></span><span style="font-size:var(--fs-small);font-weight:600;letter-spacing:0">39% of yesterday</span></div>
+<div class="ty"><span class="lbl">Caption · table header<br><code>--fs-caption · 600</code></span><span style="font-size:var(--fs-caption);font-weight:600;letter-spacing:0">NET SALES</span></div></section>
+<section><h2>Icons</h2><p class="sub">assets/icons · Material Symbols, weight 300 · currentColor · map in ICONS.md</p><div class="icons"><figure><img src="../assets/icons/add-circle.svg" alt=""><figcaption>add-circle</figcaption></figure>
+<figure><img src="../assets/icons/add.svg" alt=""><figcaption>add</figcaption></figure>
+<figure><img src="../assets/icons/badge.svg" alt=""><figcaption>badge</figcaption></figure>
+<figure><img src="../assets/icons/bar-chart.svg" alt=""><figcaption>bar-chart</figcaption></figure>
+<figure><img src="../assets/icons/calendar-month.svg" alt=""><figcaption>calendar-month</figcaption></figure>
+<figure><img src="../assets/icons/campaign.svg" alt=""><figcaption>campaign</figcaption></figure>
+<figure><img src="../assets/icons/chevron-right.svg" alt=""><figcaption>chevron-right</figcaption></figure>
+<figure><img src="../assets/icons/corporate-fare.svg" alt=""><figcaption>corporate-fare</figcaption></figure>
+<figure><img src="../assets/icons/currency-sar.svg" alt=""><figcaption>currency-sar</figcaption></figure>
+<figure><img src="../assets/icons/download.svg" alt=""><figcaption>download</figcaption></figure>
+<figure><img src="../assets/icons/expand-less.svg" alt=""><figcaption>expand-less</figcaption></figure>
+<figure><img src="../assets/icons/expand-more.svg" alt=""><figcaption>expand-more</figcaption></figure>
+<figure><img src="../assets/icons/extension.svg" alt=""><figcaption>extension</figcaption></figure>
+<figure><img src="../assets/icons/group.svg" alt=""><figcaption>group</figcaption></figure>
+<figure><img src="../assets/icons/info.svg" alt=""><figcaption>info</figcaption></figure>
+<figure><img src="../assets/icons/inventory-2.svg" alt=""><figcaption>inventory-2</figcaption></figure>
+<figure><img src="../assets/icons/language.svg" alt=""><figcaption>language</figcaption></figure>
+<figure><img src="../assets/icons/more-horiz.svg" alt=""><figcaption>more-horiz</figcaption></figure>
+<figure><img src="../assets/icons/notifications.svg" alt=""><figcaption>notifications</figcaption></figure>
+<figure><img src="../assets/icons/percent.svg" alt=""><figcaption>percent</figcaption></figure>
+<figure><img src="../assets/icons/person.svg" alt=""><figcaption>person</figcaption></figure>
+<figure><img src="../assets/icons/picture-in-picture-alt.svg" alt=""><figcaption>picture-in-picture-alt</figcaption></figure>
+<figure><img src="../assets/icons/receipt-long-fill.svg" alt=""><figcaption>receipt-long-fill</figcaption></figure>
+<figure><img src="../assets/icons/restaurant.svg" alt=""><figcaption>restaurant</figcaption></figure>
+<figure><img src="../assets/icons/search.svg" alt=""><figcaption>search</figcaption></figure>
+<figure><img src="../assets/icons/sell.svg" alt=""><figcaption>sell</figcaption></figure>
+<figure><img src="../assets/icons/settings.svg" alt=""><figcaption>settings</figcaption></figure>
+<figure><img src="../assets/icons/space-dashboard-fill.svg" alt=""><figcaption>space-dashboard-fill</figcaption></figure>
+<figure><img src="../assets/icons/storefront.svg" alt=""><figcaption>storefront</figcaption></figure>
+<figure><img src="../assets/icons/upload.svg" alt=""><figcaption>upload</figcaption></figure></div></section>
+<section><h2>TapBack Design System · POS</h2><p class="sub">design-system/ · Poppins + IBM Plex Sans Arabic · 16 UX rules · 49 line icons · full notes in design-system/README.md</p><div class="icons"><figure><img src="../design-system/icons/alert.svg" alt=""><figcaption>alert</figcaption></figure><figure><img src="../design-system/icons/back.svg" alt=""><figcaption>back</figcaption></figure><figure><img src="../design-system/icons/bag.svg" alt=""><figcaption>bag</figcaption></figure><figure><img src="../design-system/icons/bell.svg" alt=""><figcaption>bell</figcaption></figure><figure><img src="../design-system/icons/box.svg" alt=""><figcaption>box</figcaption></figure><figure><img src="../design-system/icons/card.svg" alt=""><figcaption>card</figcaption></figure><figure><img src="../design-system/icons/cash.svg" alt=""><figcaption>cash</figcaption></figure><figure><img src="../design-system/icons/chart.svg" alt=""><figcaption>chart</figcaption></figure><figure><img src="../design-system/icons/chat.svg" alt=""><figcaption>chat</figcaption></figure><figure><img src="../design-system/icons/check.svg" alt=""><figcaption>check</figcaption></figure><figure><img src="../design-system/icons/chev.svg" alt=""><figcaption>chev</figcaption></figure><figure><img src="../design-system/icons/dine.svg" alt=""><figcaption>dine</figcaption></figure><figure><img src="../design-system/icons/down.svg" alt=""><figcaption>down</figcaption></figure><figure><img src="../design-system/icons/drawer.svg" alt=""><figcaption>drawer</figcaption></figure><figure><img src="../design-system/icons/gear.svg" alt=""><figcaption>gear</figcaption></figure><figure><img src="../design-system/icons/gift.svg" alt=""><figcaption>gift</figcaption></figure><figure><img src="../design-system/icons/group.svg" alt=""><figcaption>group</figcaption></figure><figure><img src="../design-system/icons/home.svg" alt=""><figcaption>home</figcaption></figure><figure><img src="../design-system/icons/idcard.svg" alt=""><figcaption>idcard</figcaption></figure><figure><img src="../design-system/icons/kitchen.svg" alt=""><figcaption>kitchen</figcaption></figure><figure><img src="../design-system/icons/lock.svg" alt=""><figcaption>lock</figcaption></figure><figure><img src="../design-system/icons/menu.svg" alt=""><figcaption>menu</figcaption></figure><figure><img src="../design-system/icons/minus.svg" alt=""><figcaption>minus</figcaption></figure><figure><img src="../design-system/icons/more.svg" alt=""><figcaption>more</figcaption></figure><figure><img src="../design-system/icons/nfc.svg" alt=""><figcaption>nfc</figcaption></figure><figure><img src="../design-system/icons/noreceipt.svg" alt=""><figcaption>noreceipt</figcaption></figure><figure><img src="../design-system/icons/note.svg" alt=""><figcaption>note</figcaption></figure><figure><img src="../design-system/icons/orders.svg" alt=""><figcaption>orders</figcaption></figure><figure><img src="../design-system/icons/pause.svg" alt=""><figcaption>pause</figcaption></figure><figure><img src="../design-system/icons/percent.svg" alt=""><figcaption>percent</figcaption></figure><figure><img src="../design-system/icons/phone.svg" alt=""><figcaption>phone</figcaption></figure><figure><img src="../design-system/icons/plus.svg" alt=""><figcaption>plus</figcaption></figure><figure><img src="../design-system/icons/print.svg" alt=""><figcaption>print</figcaption></figure><figure><img src="../design-system/icons/qr.svg" alt=""><figcaption>qr</figcaption></figure><figure><img src="../design-system/icons/sale.svg" alt=""><figcaption>sale</figcaption></figure><figure><img src="../design-system/icons/scooter.svg" alt=""><figcaption>scooter</figcaption></figure><figure><img src="../design-system/icons/search.svg" alt=""><figcaption>search</figcaption></figure><figure><img src="../design-system/icons/send.svg" alt=""><figcaption>send</figcaption></figure><figure><img src="../design-system/icons/shift.svg" alt=""><figcaption>shift</figcaption></figure><figure><img src="../design-system/icons/split.svg" alt=""><figcaption>split</figcaption></figure><figure><img src="../design-system/icons/staff.svg" alt=""><figcaption>staff</figcaption></figure><figure><img src="../design-system/icons/swap.svg" alt=""><figcaption>swap</figcaption></figure><figure><img src="../design-system/icons/sync.svg" alt=""><figcaption>sync</figcaption></figure><figure><img src="../design-system/icons/table.svg" alt=""><figcaption>table</figcaption></figure><figure><img src="../design-system/icons/trash.svg" alt=""><figcaption>trash</figcaption></figure><figure><img src="../design-system/icons/user.svg" alt=""><figcaption>user</figcaption></figure><figure><img src="../design-system/icons/wallet.svg" alt=""><figcaption>wallet</figcaption></figure><figure><img src="../design-system/icons/wifi.svg" alt=""><figcaption>wifi</figcaption></figure><figure><img src="../design-system/icons/x.svg" alt=""><figcaption>x</figcaption></figure></div><div class="prev" style="margin-top:18px"><figure><img src="../design-system/boards/01-ux-rules.png" alt=""><figcaption>ux rules</figcaption></figure><figure><img src="../design-system/boards/02-tokens-colour.png" alt=""><figcaption>tokens colour</figcaption></figure><figure><img src="../design-system/boards/03-tokens-type-space.png" alt=""><figcaption>tokens type space</figcaption></figure><figure><img src="../design-system/boards/04-components-icons.png" alt=""><figcaption>components icons</figcaption></figure><figure><img src="../design-system/boards/05-components-buttons-chips.png" alt=""><figcaption>components buttons chips</figcaption></figure><figure><img src="../design-system/boards/06-components-content.png" alt=""><figcaption>components content</figcaption></figure><figure><img src="../design-system/boards/07-components-shell.png" alt=""><figcaption>components shell</figcaption></figure></div></section>
+<section><h2>Screens</h2><p class="sub">previews/</p><div class="prev">
+<figure><img src="../previews/dashboard-main.png" alt=""><figcaption>Main dashboard (approved)</figcaption></figure>
+<figure><img src="../previews/dashboard-variant-b-lime.png" alt=""><figcaption>Variant B — lime accent</figcaption></figure>
+<figure><img src="../previews/concept-detail.png" alt=""><figcaption>Concept detail · Meed</figcaption></figure></div></section>
+<section><h2>Hover cards & floating elements</h2><p class="sub">previews/components · built with Trezo popover, toast, dropdown-menu, offcanvas</p><div class="comps"><figure class="comp"><img src="../previews/components/floating-context-menu.png" alt="floating-context-menu"><figcaption>floating-context-menu</figcaption></figure>
+<figure class="comp"><img src="../previews/components/floating-inspector.png" alt="floating-inspector"><figcaption>floating-inspector</figcaption></figure>
+<figure class="comp"><img src="../previews/components/floating-quick-look-popover.png" alt="floating-quick-look-popover"><figcaption>floating-quick-look-popover</figcaption></figure>
+<figure class="comp"><img src="../previews/components/floating-toast-critical.png" alt="floating-toast-critical"><figcaption>floating-toast-critical</figcaption></figure>
+<figure class="comp"><img src="../previews/components/floating-toast-export-in-background.png" alt="floating-toast-export-in-background"><figcaption>floating-toast-export-in-background</figcaption></figure>
+<figure class="comp"><img src="../previews/components/floating-toast-undo.png" alt="floating-toast-undo"><figcaption>floating-toast-undo</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-avg-ticket.png" alt="hover-avg-ticket"><figcaption>hover-avg-ticket</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-gross-bar-segment.png" alt="hover-gross-bar-segment"><figcaption>hover-gross-bar-segment</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-gross-profit-what-if.png" alt="hover-gross-profit-what-if"><figcaption>hover-gross-profit-what-if</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-loss-cell.png" alt="hover-loss-cell"><figcaption>hover-loss-cell</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-net-sales.png" alt="hover-net-sales"><figcaption>hover-net-sales</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-orders.png" alt="hover-orders"><figcaption>hover-orders</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-payment.png" alt="hover-payment"><figcaption>hover-payment</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-stores-open.png" alt="hover-stores-open"><figcaption>hover-stores-open</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-today-vs-yesterday.png" alt="hover-today-vs-yesterday"><figcaption>hover-today-vs-yesterday</figcaption></figure>
+<figure class="comp"><img src="../previews/components/hover-user.png" alt="hover-user"><figcaption>hover-user</figcaption></figure></div></section>
+<section><h2>Interaction flow</h2><p class="sub">previews/flow/ceo-flow-hover.mp4</p><video poster="../previews/dashboard-main.png" src="../previews/flow/ceo-flow-hover.mp4" controls muted playsinline></video></section>
+</main></body></html>
